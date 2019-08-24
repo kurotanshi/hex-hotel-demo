@@ -1,0 +1,254 @@
+.main-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57px;
+  height: 211px;
+  writing-mode: vertical-lr;
+  background-color: #fff;
+  font-size: 48px;
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: 900;
+  color: #2d3643;
+}
+
+.main-banner {
+  position: relative;
+  display: block;
+  width: 920px;
+  height: 352px;
+  background: transparent url('../assets/photo.jpeg') 0 0 no-repeat; // padding-box;
+  background-size: cover;
+  margin: 64px 0;
+}
+
+.sub-banner {
+  position: relative;
+  display: block;
+  height: 352px;
+  background: transparent url('../assets/photo.jpeg') 33% 33% no-repeat; // padding-box;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  text-transform: capitalize;
+}
+
+.banner-title {
+  position: absolute;
+  top: 249px;
+  right: 0;
+  display: block;
+  height: 49px;
+  line-height: 49px;
+  text-align: left;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d3643;
+  text-transform: capitalize;
+}
+
+.banner-sub-title {
+  position: absolute;
+  top: 300px;
+  right: 0;
+  font: Regular 16px/24px 'Open Sans';
+  color: #748290;
+  text-transform: capitalize;
+}
+
+.main-footer {
+  display: block;
+  color: #748290;
+  height: 22px;
+  line-height: 22px;
+  margin-top: 8em;
+  margin-bottom: 1em;
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+
+.section-title {
+  display: block;
+  height: 49px;
+  line-height: 49px;
+  font-family: 'Open Sans';
+  font-size: 36px;
+  font-weight: 700;
+  color: #748290;
+}
+
+.section-sub-title {
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  text-align: left;
+  // font: Regular 16px/24px 'Open Sans';
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #748290;
+}
+
+.room-list {
+  display: block;
+  overflow: hidden;
+  height: 294px;
+  &.full {
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+.room-info {
+  float: left;
+  margin-right: 30px;
+  width: 350px;
+  height: 295px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.room-thumb-img {
+  display: block;
+  width: 350px;
+  height: 240px;
+}
+
+.room-title,
+.room-price {
+  display: block;
+  text-align: right;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  font-weight: 700;
+  color: #748290;
+  height: 33px;
+  line-height: 33px;
+}
+
+.room-title {
+  text-transform: capitalize;
+}
+
+.room-price {
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  height: 22px;
+  line-height: 22px;
+}
+
+.map {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 392px;
+  z-index: 10;
+  background-size: cover;
+  background-image: url('../assets/footer.png');
+  background-repeat: no-repeat;
+}
+
+.address > div {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  top: 0;
+  right: 0;
+  width: 22px;
+  padding: 8px 0;
+  writing-mode: vertical-lr;
+
+  & + div {
+    right: 1.5em;
+  }
+  & + div + div {
+    right: 3em;
+  }
+}
+
+.copyright,
+.addr {
+  position: absolute;
+  left: 0;
+  color: #748290;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  height: 4em;
+  line-height: 4em;
+}
+
+.addr {
+  left: auto;
+  right: 0;
+}
+
+.booking-subtotal {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 350px;
+  height: auto;
+  line-height: 27px;
+  min-height: 120px;
+  padding: 0 32px;
+  text-transform: none;
+  cursor: auto;
+
+  ul {
+    margin: 24px auto;
+  }
+
+  li {
+    display: block;
+    text-align: left;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #748290;
+    margin: 1em 0;
+  }
+
+  .booking-price {
+    position: absolute;
+    right: 33px;
+  }
+}
+
+.total-price {
+  position: relative;
+  border-top: 1px solid #e3e6e9;
+  height: 72px;
+  line-height: 72px;
+  .summary-price {
+    position: absolute;
+    font-weight: 900;
+    right: 0;
+  }
+}
+
+.action-wrap {
+  background-color: #569dc3;
+  color: #fff;
+  text-align: center;
+  padding-left: 0;
+
+  &:hover {
+    background-color: #569dc3;
+  }
+  &:after {
+    display: none;
+  }
+
+  &.disabled {
+    background-color: #eee;
+    color: #999;
+    cursor: not-allowed;
+  }
+}

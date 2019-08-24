@@ -1,0 +1,241 @@
+.room-details {
+  display: block;
+  margin-top: 111px;
+  width: 100%;
+  min-height: 1050px;
+}
+
+.room-title {
+  position: absolute;
+  color: #2d3643;
+  writing-mode: vertical-lr;
+  background-color: #fff;
+  z-index: 10;
+  width: 42px;
+  line-height: 44px;
+  height: 365px;
+  padding: 6px 0;
+  font-size: 36px;
+  font-style: italic;
+  font-family: Helvetica;
+  font-weight: 900;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.img-wrap {
+  position: relative;
+  .price-des {
+    left: 825px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #748290;
+    padding: 6px 3px;
+    position: absolute;
+    text-transform: capitalize;
+    writing-mode: vertical-lr;
+    font-family: 'Open Sans';
+  }
+}
+
+.main-img {
+  position: relative;
+  display: block;
+  width: 825px;
+  height: 480px;
+  object-fit: cover;
+  z-index: 5;
+}
+
+.sub-img {
+  display: block;
+  width: 160px;
+  height: 94px;
+  object-fit: cover;
+}
+
+.photo-list {
+  display: block;
+  height: 94px;
+  overflow: hidden;
+  margin-top: 16px;
+
+  > li {
+    float: left;
+    margin-right: 16px;
+    display: block;
+    width: 160px;
+    height: 94px;
+    cursor: pointer;
+  }
+}
+
+.room-description {
+  margin-top: 48px;
+
+  p {
+    display: block;
+    color: #748290;
+    margin-top: 24px;
+    font-size: 16px;
+    width: 540px;
+    line-height: 22px;
+    font-family: 'Open Sans';
+  }
+}
+
+.description-title {
+  color: #2d3643;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.date-picker-wrap {
+  margin-top: 1.5em;
+  width: 45%;
+}
+
+.amenities-list {
+  overflow: hidden;
+  width: 540px;
+  color: #e3e6e9;
+  // color: #748290;
+
+  .material-icons {
+    left: 0;
+    position: absolute;
+  }
+
+  li {
+    text-transform: capitalize;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 33%;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 26px;
+    padding-left: 40px;
+    font-size: 16px;
+    &.active {
+      color: #748290;
+    }
+  }
+}
+
+.aside-reserve {
+  position: fixed;
+  display: block;
+  top: 239px;
+  right: 50%;
+  margin-right: -555px;
+  width: 350px;
+  min-height: 500px;
+  z-index: 10;
+}
+
+.aside-price {
+  display: block;
+  height: 33px;
+  line-height: 33px;
+  color: #2d3643;
+  text-align: right;
+  font-size: 16px;
+  > em {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.aside-holiday-price {
+  display: block;
+  color: #748290;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.datepicker-wrap {
+  position: relative;
+  display: block;
+  width: 350px;
+  top: 40px;
+  background-color: #fff;
+  border: 1px solid #2d3643;
+
+  .material-icons {
+    position: absolute;
+    z-index: 10;
+    top: 26px;
+    left: 15px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #2d3643;
+    top: 35px;
+    right: 18px;
+  }
+
+  > div {
+    box-sizing: border-box;
+    height: 72px;
+    line-height: 72px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    cursor: pointer;
+  }
+
+  .booking-subtotal {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    width: 350px;
+    height: auto;
+    line-height: 27px;
+    min-height: 120px;
+    padding: 0 32px;
+    text-transform: none;
+    cursor: auto;
+
+    ul {
+      margin: 24px auto;
+    }
+
+    li {
+      display: block;
+      text-align: left;
+      font-family: 'Open Sans';
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      color: #748290;
+      margin: 1em 0;
+    }
+
+    .booking-price {
+      position: absolute;
+      right: 33px;
+    }
+  }
+
+  .total-price {
+    position: relative;
+    border-top: 1px solid #e3e6e9;
+    height: 72px;
+    line-height: 72px;
+    .summary-price {
+      position: absolute;
+      font-weight: 900;
+      right: 0;
+    }
+  }
+}
